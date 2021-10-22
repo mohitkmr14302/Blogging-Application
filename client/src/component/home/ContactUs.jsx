@@ -145,7 +145,7 @@ export default function ContactUs() {
          </div>
         <div className={classes.field}>
           <label className={classes.label} htmlFor="fullName">Full Name</label>
-          <input type="text" className={classes.input100} style={{ height: 40 }} name="fullName" id="fullName" required  defaultValue={`${data.firstname}`}/>
+          <input type="text" className={classes.input100} style={{ height: 40 }} name="fullName" id="fullName" required  Value={`${data.firstname} ${data.lastname}`}/>
         </div>
 
         <div className={classes.field}>
