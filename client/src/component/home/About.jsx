@@ -94,7 +94,7 @@ export default function About() {
                  <Link to={"/"} className={classes.link1}>Start Writting</Link>
                 </div>
                 <div className={classes.component3}>
-                    <img className={classes.image} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.6435-9/72060782_2422570768011380_6035507620247240704_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=PGs_zXG-C0EAX8r5_pb&_nc_ht=scontent.fpat3-2.fna&oh=18dcf7f4038bd4b25260b5d7f31fcd5e&oe=6148811F" alt="" />
+                    <img className={classes.image} src="https://lh3.googleusercontent.com/a-/AOh14Gi42-Gsm9P_MkBzYxnTrS7nQiZn6GpR8wN0GODg=s360-p-rw-no" alt="" />
                     <p style={{color: 'white' ,marginBottom: 0}}>Created and Managed by : Mohit Kumar</p>
                     <p  style={{color: 'white',marginTop: 5}}>NIT Agartala</p>
                 </div>

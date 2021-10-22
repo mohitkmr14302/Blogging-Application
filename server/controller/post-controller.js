@@ -63,7 +63,7 @@ export const deletepost = async (req, res) => {
 export const userpost = async (req, res) => {
     try {
         const token1 = req.cookies['jwt'];
-        const verifyuser = jwt.verify(token1, "mynameismohitkumarfromnationalinstituteoftechnologyagartala");
+        const verifyuser = jwt.verify(token1, process.env.SECRET_KEY);
         const user = await Profile.findOne({ _id: verifyuser._id });
         let post = await Post.find({ username: user.email });
         res.status(200).json(post);
