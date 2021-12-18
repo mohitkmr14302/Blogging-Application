@@ -53,7 +53,7 @@ const Updateview = ({match})=>{
   const [file,setfile]=useState('');
     const [image,setimage]=useState('');
     
- 
+
   const classes=useStyle();
   const history = useHistory();
   const [post,setpost]=useState(initialvalue);

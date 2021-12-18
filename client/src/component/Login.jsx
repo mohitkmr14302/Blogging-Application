@@ -12,6 +12,9 @@ const useStyle = makeStyles({
         border: '2px solid black',
         margin: '68px auto',
         borderRadius: 20,
+        "@media (max-width: 591px)": {
+            margin: "10px auto",
+          }
     },
     tittle: {
         backgroundColor: "lightgrey",
