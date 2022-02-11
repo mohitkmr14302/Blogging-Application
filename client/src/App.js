@@ -13,6 +13,7 @@ import Contact from './component/home/ContactUs';
 import Login from './component/Login'
 import Register from './component/Register'
 import Profile from './component/home/Profile'
+...........................
 function App() {
   document.title = "NITA BLOG";
   return (
