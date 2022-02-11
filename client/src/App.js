@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Box } from '@material-ui/core';
 import Header from './component/Header';
@@ -14,9 +14,20 @@ import Profile from './component/home/Profile'
 
 function App() {
   document.title = "NITA BLOG";
+  const [mode,setmode]=useState(true);
+  const togglemode =()=>{
+    setmode(!mode);
+    console.log(mode);
+    if(mode===true){
+      document.body.style.backgroundColor='rgb(3 3 4 / 77%)';
+     
+    }else{
+      document.body.style.backgroundColor='white';
+    }
+  }
   return (
     <BrowserRouter>
-      
+      <Header mode={mode} togglemode={togglemode}/>
       <Box style={{ marginTop: 64 }}>
         <Switch>
           <Route exact path='/' component={Home} />

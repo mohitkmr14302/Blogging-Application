@@ -6,6 +6,11 @@ import { makeStyles } from "@material-ui/core";
 import { getprofile, userpost } from "../../service/api";
 import Post1 from "./Post1"
 const useStyle = makeStyles({
+    mainbox : {
+        // backgroundColor: '#245279',
+        // backgroundColor: '#64896e'
+        backgroundColor: '#5dc27ca6'
+    },
     icons: {
         float: "right"
     },
@@ -16,17 +21,17 @@ const useStyle = makeStyles({
 
     },
     photot: {
-        backgroundColor: '#245279',
+        // backgroundColor: '#245279',
         height: 300,
         width: '100%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
-        color: "white"
+        color: "#000000"
 
     },
     container:{
-        backgroundColor: '#245279',
+        // backgroundColor: '#245279',
         padding: "0 100px",
           "@media (max-width: 591px)": {
               padding: 0
@@ -64,13 +69,13 @@ const useStyle = makeStyles({
     },
     lastdiv: {
         height: '8rem',
-        backgroundColor: "#245279"
+        // backgroundColor: "#245279"
     },
     para: {
     margin: "initial",
     fontSize: '3em',
     textAlign: 'center',
-    color: 'antiquewhite',
+    color: '#000000',
     }
 });
 const About = () => {
@@ -98,7 +103,7 @@ const About = () => {
     const classes = useStyle();
    
         return (
-            <>
+            <div className={classes.mainbox}>
 
             <div className={classes.container}>
                 <div className={classes.photot}>
@@ -129,7 +134,7 @@ const About = () => {
                 <p className={classes.para}>Thanks to be here !!</p>
             </div>
             </div>
-        </>
+        </div>
     )
 }
 export default About;

@@ -59,7 +59,7 @@ const useStyle = makeStyles({
   heading: {
     height: 400,
     minWidth: '100%',
-    backgroundColor: '#3c9779ed',
+    backgroundColor: '#5dc27ca6',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
