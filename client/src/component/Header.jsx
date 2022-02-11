@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { logout } from '../service/api';
 import { useHistory } from 'react-router';
 import { FaBars } from 'react-icons/fa';
-// import { FaRegWindowClose } from 'react-icons/fa';
-
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import Brightness3RoundedIcon from '@material-ui/icons/Brightness3Rounded';
 import { useEffect, useState } from 'react';
 const useStyle = makeStyles({
   component: {
@@ -66,11 +66,15 @@ const useStyle = makeStyles({
       marginTop: "20px"
     }
   },
+  mode: {
+    cursor: "pointer",
+  }
 
 });
-const Header = () => {
+const Header = (props) => {
   // const onClick={updateset()} [height, setHeight] = useState(0);
   const [set, setset] = useState(true);
+  const[img,setimg] =useState(false);
   useEffect(() => {
     const updateWindowDimensions = () => {
       const newHeight = window.innerWidth;
@@ -94,7 +98,10 @@ const Header = () => {
     setset(!set);
     // console.log(set);
   }
-
+  function updateimg(e) {
+    setimg(!img);
+    // console.log(set);
+  }
   function updateset1(){
       if(window.innerWidth<574){
         console.log(set);
@@ -124,7 +131,10 @@ const Header = () => {
           <NavLink exact activeClassName={classes.active_class} onClick={()=>updateset1()} className={classes.link} to={'/login'}><Typography>LOGIN</Typography></NavLink>
           <hr className={classes.line} />
           <NavLink exact activeClassName={classes.active_class}  className={classes.link} to={'/logout'} onClick={() => {trylogout();updateset1()}}><Typography>LOGOUT</Typography></NavLink>
-
+          {
+            img ? <WbSunnyIcon className={classes.mode}  onClick={()=> {updateimg();props.togglemode()}}/> : 
+            <Brightness3RoundedIcon className={classes.mode} onClick={()=> {updateimg();props.togglemode()}}/>
+          }
 
         </Toolbar> : null}
 

@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyle=makeStyles({
  container: {
      backgroundColor: '#d6cde05c',
-     boxShadow: '8px 12px 10px #dfd5d5',
+     boxShadow: '8px 12px 10px #796d6d',
      height : "350px",
      margin: "10px",
      borderRadius: 10,
