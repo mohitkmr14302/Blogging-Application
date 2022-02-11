@@ -27,11 +27,7 @@ function App() {
   }
   return (
     <BrowserRouter>
-<<<<<<< HEAD
-      <Header/>
-=======
       <Header mode={mode} togglemode={togglemode}/>
->>>>>>> done
       <Box style={{ marginTop: 64 }}>
         <Switch>
           <Route exact path='/' component={Home} />
