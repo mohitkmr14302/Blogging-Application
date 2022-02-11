@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Box } from '@material-ui/core';
@@ -13,12 +11,12 @@ import Contact from './component/home/ContactUs';
 import Login from './component/Login'
 import Register from './component/Register'
 import Profile from './component/home/Profile'
-...........................
+// aaaaaaaa
 function App() {
   document.title = "NITA BLOG";
   return (
     <BrowserRouter>
-      <Header />
+      
       <Box style={{ marginTop: 64 }}>
         <Switch>
           <Route exact path='/' component={Home} />
