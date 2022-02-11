@@ -17,7 +17,7 @@ function App() {
   document.title = "NITA BLOG";
   return (
     <BrowserRouter>
-      
+      <Header/>
       <Box style={{ marginTop: 64 }}>
         <Switch>
           <Route exact path='/' component={Home} />
